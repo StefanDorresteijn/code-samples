@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<form action="/login" method="post" onSubmit="login()" name="loginform">
+				<input name="email" placeholder="Email" type="text">
+				<input name="password" placeholder="Password" type="password">
+				<input name="commit" type="submit" value="Sign in">
+		</form>
+	</body>
+	<script>
+		function login()
+		{
+			app.login(document.forms['loginform']['email'].value, document.forms['loginform']['password'].value);
+		}
+	</script>
+</html>
